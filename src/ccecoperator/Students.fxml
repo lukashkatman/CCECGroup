@@ -33,5 +33,7 @@
     </TableView>
     <Button layoutX="21.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleButtonViewStudentAction" text="ViewStudent" />
     <Button layoutX="304.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleButtonAddStudentAction" text="AddStudent" />
+    <Button layoutX="304.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleButtonDelStudentAction" text="Remove Student" />
+    <TextField fx:id="removeStudent" layoutX="467.0" layoutY="198.0" prefWidth="50.0" promptText="ID" />
   </children>
 </AnchorPane>

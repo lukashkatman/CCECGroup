@@ -23,6 +23,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -65,6 +66,9 @@ public class StudentsController extends ControllerClass {
     @FXML
     private TableColumn<StudentProperty, Integer> idEmployee;
     
+    @FXML
+    private TextField removeStudent;
+    
     private ObservableList<StudentProperty> allStudents;
     
     
@@ -75,8 +79,9 @@ public class StudentsController extends ControllerClass {
         try {
             StudentQueries sq = new StudentQueries();
             
-            sq.delStudent(999999); //get this value from text field
+            sq.delStudent(Integer.valueOf(removeStudent.getText())); //get this value from text field
         }catch(Exception ex){
+            System.out.println("Something went wrong!");
             
         }
     }
