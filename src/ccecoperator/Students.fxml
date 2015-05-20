@@ -5,34 +5,33 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="567.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ccecoperator.Scene2Controller">
-   <children>
-      <Label alignment="CENTER" layoutX="28.0" layoutY="38.0" text="CROSS COUNTRY EDUCATIONAL CONSULTANCY">
-         <font>
-           
-         </font>
-      </Label>
-      <Button layoutX="14.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="START" />
-      <Button layoutX="14.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="STUDENTS" />
-      <Button layoutX="14.0" layoutY="259.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="COUNTRIES" />
-      <Button layoutX="14.0" layoutY="301.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="UNIVERSITIES" />
-      <Button layoutX="14.0" layoutY="344.0" mnemonicParsing="false" text="SCHOLARSHIPS" />
-      <Button layoutX="14.0" layoutY="387.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="APPLICATIONS" />
-      <Button layoutX="14.0" layoutY="430.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="EMPLOYEES" />
-      <Button layoutX="14.0" layoutY="470.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="SETTINGS" />
-      <Button layoutX="14.0" layoutY="510.0" mnemonicParsing="false" onAction="#handleButtonLogOutAction" prefHeight="25.0" prefWidth="100.0" text="LOG OUT" />
-      <Label layoutX="47.0" layoutY="125.0" text="MENU" />
-      <Label layoutX="359.0" layoutY="180.0" text="STUDENTS">
-         <font>
-            
-         </font>
-      </Label>
-      <TableView layoutX="151.0" layoutY="219.0" prefHeight="316.0" prefWidth="516.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
-        </columns>
-      </TableView>
-   </children>
+<AnchorPane id="AnchorPane" prefHeight="567.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ccecoperator.StudentsController">
+  <children>
+    <Label alignment="CENTER" layoutX="28.0" layoutY="38.0" text="CROSS COUNTRY EDUCATIONAL CONSULTANCY">
+      <font>
+        <Font size="12.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Button layoutX="21.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleButtonBackAction" prefHeight="25.0" prefWidth="100.0" text="Back" />
+    <Button layoutX="21.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleButtonLogOutAction" prefHeight="25.0" prefWidth="100.0" text="LOG OUT" />
+    <Label layoutX="47.0" layoutY="90.0" text="MENU" />
+    <Label font="$x1" layoutX="409.0" layoutY="82.0" text="STUDENTS" />
+    <TableView id="studentTable" fx:id="studentsTable" layoutX="28.0" layoutY="237.0" prefHeight="316.0" prefWidth="708.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="ID" fx:id="idStudent" />
+        <TableColumn prefWidth="75.0" text="Name" fx:id="studentName" />
+        <TableColumn prefWidth="75.0" text="Phone" fx:id="phnumberStudent" />
+        <TableColumn prefWidth="75.0" text="Address" fx:id="address" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="195.0" text="Email" fx:id="email" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="51.0" text="Admitted" fx:id="admitted" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="53.0" text="idUni" fx:id="idUniversity" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="57.0" text="idCountry" fx:id="idCountry" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="51.0" text="idEmployee" fx:id="idEmployee" />
+      </columns>
+    </TableView>
+    <Button layoutX="21.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleButtonViewStudentAction" text="ViewStudent" />
+    <Button layoutX="304.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleButtonAddStudentAction" text="AddStudent" />
+  </children>
 </AnchorPane>

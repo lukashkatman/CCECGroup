@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ccecoperator.AddStudnetController">
+  <children>
+    <TextField fx:id="addidStudent" layoutX="36.0" layoutY="59.0" prefWidth="200.0" promptText="idStudent" text="" />
+    <TextField fx:id="addstudentName" layoutX="36.0" layoutY="105.0" prefWidth="200.0" promptText="studentName" />
+    <TextField fx:id="addphnumberStudent" layoutX="36.0" layoutY="154.0" prefWidth="200.0" promptText="phnumberStudent" />
+    <TextField fx:id="addaddress" layoutX="36.0" layoutY="207.0" prefWidth="200.0" promptText="address" />
+    <TextField fx:id="addemail" layoutX="36.0" layoutY="262.0" prefWidth="200.0" promptText="email" />
+    <TextField fx:id="addadmitted" layoutX="36.0" layoutY="310.0" prefWidth="200.0" promptText="admitted" />
+    <TextField fx:id="addidUniversity" layoutX="361.0" layoutY="105.0" prefWidth="200.0" promptText="idUniversty" />
+    <TextField fx:id="addidCountry" layoutX="361.0" layoutY="165.0" prefWidth="200.0" promptText="idCountry" />
+    <TextField fx:id="addidEmployee" layoutX="361.0" layoutY="218.0" prefWidth="200.0" promptText="idEmployee" />
+    <Button layoutX="36.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleButtonAddStudentAction" text="Insert" />
+  </children>
+</AnchorPane>

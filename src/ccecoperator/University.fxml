@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ccecoperator.UniversityController">
+  <children>
+    <Button layoutX="14.0" layoutY="104.0" mnemonicParsing="false" onAction="#handleButtonBackAction" text="Back" />
+    <Button layoutX="14.0" layoutY="179.0" mnemonicParsing="false" onAction="#handleButtonViewUniversityAction" text="ViewUniversity" />
+    <TableView fx:id="universityTable" layoutX="139.0" layoutY="80.0" prefHeight="269.0" prefWidth="447.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="ID" fx:id="idUniversity" />
+        <TableColumn prefWidth="75.0" text="Name" fx:id="universityName" />
+        <TableColumn prefWidth="75.0" text="Faculty" fx:id="faculty" />
+        <TableColumn prefWidth="75.0" text="Fee" fx:id="fee" />
+        <TableColumn prefWidth="75.0" text="Starting Date" fx:id="dateOfEnrollment" />
+        <TableColumn prefWidth="75.0" text="ID Country" fx:id="idCountry" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>
