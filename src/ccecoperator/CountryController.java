@@ -54,6 +54,8 @@ public class CountryController extends ControllerClass {
    
    
    
+   
+   
     
     @FXML
     private void handleButtonBackAction(ActionEvent event) {
@@ -71,7 +73,12 @@ public class CountryController extends ControllerClass {
             stage.show();                       
 
             System.out.println("Gatting you back to previous page!");
-        } catch (Exception ex) {
+        }
+        
+       
+        
+        
+        catch (Exception ex) {
         }
       
        
@@ -114,7 +121,7 @@ public class CountryController extends ControllerClass {
                     int nbr = rs.getInt("visaCharge");
                     String name = rs.getString("countryName");
                     System.out.println("Country Name: " + name + " \n and our service charge in SEK  " + nbr + "\n\n");
-                }*/
+                } */
                
                 
             }
@@ -122,7 +129,7 @@ public class CountryController extends ControllerClass {
             System.err.println("ERROR: " + e);
         }
     
-    }
+    } 
     
     private void fillTable() {
         idCountry.setCellValueFactory(CellData -> CellData.getValue().getIdCountry().asObject());

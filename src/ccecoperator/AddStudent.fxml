@@ -19,5 +19,14 @@
     <TextField fx:id="addidEmployee" layoutX="361.0" layoutY="218.0" prefWidth="200.0" promptText="idEmployee" />
     <Button layoutX="36.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleButtonAddStudentAction" text="Insert" />
     <Button layoutX="283.0" layoutY="372.0" mnemonicParsing="false" onAction="#handleButtonBackAction" text="Back" />
+    <Label fx:id="StudentID" layoutX="36.0" layoutY="43.0" text="Student ID" />
+    <Label fx:id="Studentname" layoutX="36.0" layoutY="89.0" text="Student Name" />
+    <Label fx:id="Phonenumber" layoutX="36.0" layoutY="138.0" text="Phonenumber" />
+    <Label fx:id="Address" layoutX="37.0" layoutY="191.0" text="Address" />
+    <Label fx:id="Email" layoutX="36.0" layoutY="246.0" text="Email" />
+    <Label fx:id="Admitted" layoutX="37.0" layoutY="294.0" text="Admitted" />
+    <Label fx:id="UniversityID" layoutX="361.0" layoutY="89.0" text="University ID" />
+    <Label fx:id="CountryID" layoutX="361.0" layoutY="149.0" text="Country ID" />
+    <Label fx:id="EmployeeID" layoutX="361.0" layoutY="207.0" text="Employee ID" />
   </children>
 </AnchorPane>

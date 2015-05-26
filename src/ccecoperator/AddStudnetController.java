@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -50,6 +51,33 @@ public class AddStudnetController extends ControllerClass {
     
     @FXML
     private TextField addidEmployee;
+    
+    @FXML
+    private Label StudentID;
+    
+    @FXML
+    private Label Studentname;
+    
+    @FXML
+    private Label Phonenumber;
+    
+    @FXML
+    private Label Address;
+    
+    @FXML
+    private Label Email;
+    
+    @FXML
+    private Label Admitted;        
+            
+    @FXML
+    private Label UniversityID;
+    
+    @FXML
+    private Label CountryID;        
+            
+    @FXML
+    private Label EmployeeID;
     
     
     StudentQueries studentQueries = new StudentQueries();
@@ -88,7 +116,7 @@ public class AddStudnetController extends ControllerClass {
             Node node = (Node) event.getSource();       
             Stage stage = (Stage) node.getScene().getWindow(); 
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Scene2mainpage.fxml"));  
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Students.fxml"));  
             Parent root = loader.load();
 
             Scene scene = new Scene(root);      

@@ -5,6 +5,7 @@
  */
 package ccecoperator;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -20,6 +21,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import static javax.management.remote.JMXConnectorFactory.connect;
 
@@ -29,6 +31,9 @@ import static javax.management.remote.JMXConnectorFactory.connect;
  * @author Lokes
  */
 public class Scene2mainpageController extends ControllerClass {
+    
+    @FXML
+    private Label accessDenied;
     
     @FXML
     public void handleButtonSqlConnectionAction(ActionEvent event) {
@@ -80,6 +85,13 @@ public class Scene2mainpageController extends ControllerClass {
     
      @FXML 
     private void handleButtonEmployeesAction(ActionEvent event) {
+        
+        if (!DataStorage.getInstance().getIsAdmin()) {
+
+            accessDenied.setText("MANAGER ACCESS REQUIRED");
+            System.out.println("You do not have access!");
+        
+        } else {
 
         try {
             
@@ -99,6 +111,7 @@ public class Scene2mainpageController extends ControllerClass {
 
         System.out.println("ERROR!");
         }
+    }
     }
     @FXML 
     private void handleButtonUniversityAction(ActionEvent event) {
@@ -146,28 +159,38 @@ public class Scene2mainpageController extends ControllerClass {
         }
     }
     
-    private void handleButtonSettingsAction(ActionEvent event) {
-
-        try {
-            
-            Node node = (Node) event.getSource();
-            Stage stage = (Stage) node.getScene().getWindow();
-
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Settings.fxml"));
-            Parent root = loader.load();
-
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-
-            System.out.println("You clicked Setting!");
-        } catch (Exception ex) {
+    @FXML
+    private void handleButtonSettingsAction(ActionEvent event) throws IOException {
         
+        
+        if (!DataStorage.getInstance().getIsAdmin()) {
 
-        System.out.println("ERROR!");
+            accessDenied.setText("MANAGER ACCESS REQUIRED");
+            System.out.println("You do not have access!");
+        
+        } else {
+
+            try {
+
+                Node node = (Node) event.getSource();
+                Stage stage = (Stage) node.getScene().getWindow();
+
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("Settings.fxml"));
+                Parent root = loader.load();
+
+                Scene scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+
+                System.out.println("You clicked Settings!");
+            } catch (Exception ex) {
+
+                System.out.println("ERROR!");
+            }
         }
+
     }
-    
+
      @FXML 
     private void handleButtonScholarshipAction(ActionEvent event) {
 

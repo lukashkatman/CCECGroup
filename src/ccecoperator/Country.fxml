@@ -4,6 +4,7 @@
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ccecoperator.CountryController">
@@ -19,5 +20,6 @@
         <TableColumn prefWidth="75.0" text="Visa Charge" fx:id="visaCharge" />
       </columns>
     </TableView>
+    <StackPane id="StackPane" layoutX="110.0" layoutY="56.0" />
   </children>
 </AnchorPane>

@@ -24,8 +24,18 @@
         <Image url="@crosscountry.jpg" />
       </image>
     </ImageView>
-    <TextField fx:id="usernameLogIn" layoutX="285.0" layoutY="353.0" prefWidth="200.0" text="USERNAME" />
-    <PasswordField fx:id="passwordLogIn" layoutX="285.0" layoutY="400.0" prefWidth="200.0" promptText="" text="PASSWORD" />
-    <Button layoutX="354.0" layoutY="443.0" mnemonicParsing="false" onAction="#handleButtonLogInAction" text="Log In" />
+    <TextField fx:id="usernameManager" layoutX="20.0" layoutY="369.0" prefWidth="200.0" promptText="USERNAME" />
+    <PasswordField fx:id="passwordManager" layoutX="20.0" layoutY="414.0" prefWidth="200.0" promptText="PASSWORD" />
+    <Button layoutX="82.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleButtonLogInManagerAction" text="Log In" />
+    <Label layoutX="82.0" layoutY="339.0" text="Manager " />
+    <TextField fx:id="usernameEmployee" layoutX="540.0" layoutY="369.0" prefWidth="200.0" promptText="USERNAME" />
+    <PasswordField fx:id="passwordEmployee" layoutX="540.0" layoutY="414.0" prefWidth="200.0" promptText="PASSWORD" />
+    <Label layoutX="599.0" layoutY="336.0" text="Employee" />
+    <Button layoutX="640.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleButtonLogInEmployeeAction" text="Log In" />
+    <Label fx:id="labelLogIn" layoutX="238.0" layoutY="342.0" prefHeight="25.0" prefWidth="303.0" textAlignment="CENTER" textFill="RED">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
   </children>
 </AnchorPane>
