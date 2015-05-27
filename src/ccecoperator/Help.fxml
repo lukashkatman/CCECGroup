@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-background-color 0xbfbfbfff?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ccecoperator.AddStudnetController">
+  <children>
+    <Label id="IDinfo" fx:id="IDCountryinfo" layoutX="53.0" layoutY="49.0" text="Country IDs'" />
+    <Label fx:id="sv" layoutX="53.0" layoutY="81.0" text="Sweden - 101" />
+    <Label fx:id="dk" layoutX="53.0" layoutY="107.0" text="Denmark - 102" />
+    <Label fx:id="no" layoutX="53.0" layoutY="136.0" text="Norway- 103" />
+    <Label fx:id="fi" layoutX="53.0" layoutY="168.0" text="Finland- 104" />
+    <Button layoutX="491.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleButtonGobackAction" text="Back" />
+    <Label id="Empid" fx:id="empid" layoutX="379.0" layoutY="97.0" text="Employee IDs'" />
+    <Label fx:id="peter" layoutX="379.0" layoutY="128.0" text="Peter- 51" />
+    <Label fx:id="jessica" layoutX="379.0" layoutY="152.0" text="Jessica- 52" />
+    <Label fx:id="micheal" layoutX="379.0" layoutY="184.0" text="Micheal- 53" />
+    <Label fx:id="unid" layoutX="53.0" layoutY="250.0" text="University IDs'" />
+    <Label fx:id="hkr" layoutX="53.0" layoutY="275.0" text="HKR- 81" />
+    <Label fx:id="mu" layoutX="53.0" layoutY="300.0" text="Malmö University- 82" />
+    <Label fx:id="cum" layoutX="53.0" layoutY="327.0" text="Copenhegan University- 85 (Medicine)" />
+    <Label fx:id="cud" layoutX="53.0" layoutY="357.0" text="Copenhegan University- 86 (Dental)" />
+    <Label fx:id="nu" layoutX="332.0" layoutY="278.0" text="Norwegian University- 90" />
+    <Label fx:id="ou" layoutX="332.0" layoutY="303.0" text="Oslo University- 91" />
+    <Label fx:id="hp" layoutX="332.0" layoutY="327.0" text="Helsinki Polyteknik- 95" />
+  </children>
+  <effect>
+    <InnerShadow>
+      <input>
+        <Lighting surfaceScale="5.0">
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant azimuth="-135.0" />
+          </light>
+        </Lighting>
+      </input>
+    </InnerShadow>
+  </effect>
+</AnchorPane>

@@ -4,29 +4,46 @@
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?scenebuilder-background-color 0x00665aff?>
 
 <AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ccecoperator.AddStudnetController">
   <children>
-    <TextField fx:id="addidStudent" layoutX="36.0" layoutY="59.0" prefWidth="200.0" promptText="idStudent" text="" />
-    <TextField fx:id="addstudentName" layoutX="36.0" layoutY="105.0" prefWidth="200.0" promptText="studentName" />
-    <TextField fx:id="addphnumberStudent" layoutX="36.0" layoutY="154.0" prefWidth="200.0" promptText="phnumberStudent" />
-    <TextField fx:id="addaddress" layoutX="36.0" layoutY="207.0" prefWidth="200.0" promptText="address" />
-    <TextField fx:id="addemail" layoutX="36.0" layoutY="262.0" prefWidth="200.0" promptText="email" />
-    <TextField fx:id="addadmitted" layoutX="36.0" layoutY="310.0" prefWidth="200.0" promptText="admitted" />
-    <TextField fx:id="addidUniversity" layoutX="361.0" layoutY="105.0" prefWidth="200.0" promptText="idUniversty" />
-    <TextField fx:id="addidCountry" layoutX="361.0" layoutY="165.0" prefWidth="200.0" promptText="idCountry" />
-    <TextField fx:id="addidEmployee" layoutX="361.0" layoutY="218.0" prefWidth="200.0" promptText="idEmployee" />
+    <TextField fx:id="addidStudent" blendMode="GREEN" layoutX="36.0" layoutY="59.0" prefWidth="200.0" promptText="idStudent" text="" />
+    <TextField fx:id="addstudentName" blendMode="GREEN" layoutX="36.0" layoutY="105.0" prefWidth="200.0" promptText="studentName" />
+    <TextField fx:id="addphnumberStudent" blendMode="GREEN" layoutX="36.0" layoutY="154.0" prefWidth="200.0" promptText="phnumberStudent" />
+    <TextField fx:id="addaddress" blendMode="GREEN" layoutX="36.0" layoutY="207.0" prefWidth="200.0" promptText="address" />
+    <TextField fx:id="addemail" blendMode="GREEN" layoutX="36.0" layoutY="262.0" prefWidth="200.0" promptText="email" />
+    <TextField fx:id="addadmitted" blendMode="GREEN" layoutX="36.0" layoutY="310.0" prefWidth="200.0" promptText="admitted" />
+    <TextField fx:id="addidUniversity" blendMode="GREEN" layoutX="361.0" layoutY="105.0" prefWidth="200.0" promptText="idUniversty" />
+    <TextField fx:id="addidCountry" blendMode="GREEN" layoutX="361.0" layoutY="165.0" prefWidth="200.0" promptText="idCountry" />
+    <TextField fx:id="addidEmployee" blendMode="GREEN" layoutX="361.0" layoutY="218.0" prefWidth="200.0" promptText="idEmployee" />
     <Button layoutX="36.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleButtonAddStudentAction" text="Insert" />
     <Button layoutX="283.0" layoutY="372.0" mnemonicParsing="false" onAction="#handleButtonBackAction" text="Back" />
-    <Label fx:id="StudentID" layoutX="36.0" layoutY="43.0" text="Student ID" />
-    <Label fx:id="Studentname" layoutX="36.0" layoutY="89.0" text="Student Name" />
-    <Label fx:id="Phonenumber" layoutX="36.0" layoutY="138.0" text="Phonenumber" />
-    <Label fx:id="Address" layoutX="37.0" layoutY="191.0" text="Address" />
-    <Label fx:id="Email" layoutX="36.0" layoutY="246.0" text="Email" />
-    <Label fx:id="Admitted" layoutX="37.0" layoutY="294.0" text="Admitted" />
-    <Label fx:id="UniversityID" layoutX="361.0" layoutY="89.0" text="University ID" />
-    <Label fx:id="CountryID" layoutX="361.0" layoutY="149.0" text="Country ID" />
-    <Label fx:id="EmployeeID" layoutX="361.0" layoutY="207.0" text="Employee ID" />
+    <Label fx:id="StudentID" layoutX="36.0" layoutY="43.0" text="Student ID">
+      <textFill>
+        <Color blue="1.000" green="0.880" red="0.000" fx:id="x3" />
+      </textFill>
+    </Label>
+    <Label fx:id="Studentname" layoutX="36.0" layoutY="89.0" text="Student Name">
+      <textFill>
+        <Color blue="1.000" green="0.640" red="0.000" fx:id="x2" />
+      </textFill>
+    </Label>
+    <Label fx:id="Phonenumber" layoutX="36.0" layoutY="138.0" text="Phonenumber">
+      <textFill>
+        <Color blue="0.800" green="0.704" red="0.000" fx:id="x1" />
+      </textFill>
+    </Label>
+    <Label fx:id="Address" layoutX="37.0" layoutY="191.0" text="Address" textFill="$x2" />
+    <Label fx:id="Email" layoutX="36.0" layoutY="246.0" text="Email" textFill="$x2" />
+    <Label fx:id="Admitted" layoutX="37.0" layoutY="294.0" text="Admitted" textFill="$x3" />
+    <Label fx:id="UniversityID" layoutX="361.0" layoutY="89.0" text="University ID" textFill="$x3" />
+    <Label fx:id="CountryID" layoutX="361.0" layoutY="149.0" text="Country ID" textFill="#00ccb4" />
+    <Label fx:id="EmployeeID" layoutX="361.0" layoutY="202.0" text="Employee ID" textFill="$x3" />
+    <Button layoutX="471.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleButtonHelpAction" text="Help" />
+    <Label fx:id="helpinfo" layoutX="385.0" layoutY="333.0" text="Click here to get help with certain IDs'" textFill="$x2" />
   </children>
 </AnchorPane>

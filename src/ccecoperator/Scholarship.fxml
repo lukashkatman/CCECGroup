@@ -5,9 +5,24 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ccecoperator.ScholarshipController">
   <children>
-    <Button layoutX="38.0" layoutY="98.0" mnemonicParsing="false" onAction="#handleButtonBackAction" text="Back" />
+    <Button layoutX="38.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleButtonBackAction" text="Back" />
+    <Label layoutX="219.0" layoutY="51.0" text="SCHOLARSHIPS" textFill="#00a3ff">
+      <font>
+        <Font name="System Bold" size="22.0" />
+      </font>
+    </Label>
+    <Text layoutX="106.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of useful links of scholarship programmes for students are shown below. For further information of available scholarships in each country visit their website. " wrappingWidth="380.0" />
+    <Label layoutX="106.0" layoutY="159.0" text="Sweden" />
+    <Label layoutX="106.0" layoutY="209.0" text="Norway" />
+    <Label layoutX="107.0" layoutY="253.0" text="Denmark" />
+    <Label layoutX="107.0" layoutY="298.0" text="Finland" />
+    <Hyperlink disable="false" layoutX="106.0" layoutY="176.0" text="https://studyinsweden.se/scholarships/" />
+    <Hyperlink disable="false" layoutX="107.0" layoutY="226.0" text="http://www.studyinnorway.no/Study-in-Norway/Scholarships" />
+    <Hyperlink disable="false" layoutX="107.0" layoutY="270.0" text="http://studyindenmark.dk/study-options/tuition-fees-scholarships" />
+    <Hyperlink disable="false" layoutX="107.0" layoutY="315.0" text="http://www.studyinfinland.fi/tuition_and_scholarships/eu_scholarships" />
   </children>
 </AnchorPane>

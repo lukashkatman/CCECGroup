@@ -11,21 +11,26 @@
 
 <AnchorPane id="AnchorPane" prefHeight="567.0" prefWidth="703.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ccecoperator.Scene2mainpageController">
   <children>
-    <Label alignment="CENTER" layoutX="28.0" layoutY="38.0" text="CROSS COUNTRY EDUCATIONAL CONSULTANCY">
+    <Label alignment="CENTER" layoutX="28.0" layoutY="38.0" text="CROSS COUNTRY EDUCATIONAL CONSULTANCY" textFill="RED">
       <font>
         <Font name="Bookman Old Style" size="26.0" />
       </font>
     </Label>
-    <Button layoutX="14.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleButtonStudentsAction" prefHeight="25.0" prefWidth="100.0" text="STUDENTS" />
-    <Button layoutX="14.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleButtonCountryAction" prefHeight="25.0" prefWidth="100.0" text="COUNTRIES" />
-    <Button layoutX="14.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleButtonUniversityAction" prefHeight="25.0" prefWidth="100.0" text="UNIVERSITIES" />
+    <Button layoutX="16.0" layoutY="181.0" mnemonicParsing="false" onAction="#handleButtonStudentsAction" prefHeight="25.0" prefWidth="100.0" text="STUDENTS" />
+    <Button layoutX="14.0" layoutY="234.0" mnemonicParsing="false" onAction="#handleButtonCountryAction" prefHeight="25.0" prefWidth="100.0" text="COUNTRIES" />
+    <Button layoutX="14.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleButtonUniversityAction" prefHeight="25.0" prefWidth="100.0" text="UNIVERSITIES" />
     <Button layoutX="14.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleButtonScholarshipAction" text="SCHOLARSHIPS" />
-    <Button layoutX="14.0" layoutY="387.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="APPLICATIONS" />
-    <Button layoutX="15.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleButtonEmployeesAction" prefHeight="25.0" prefWidth="100.0" text="EMPLOYEES" />
-    <Button layoutX="14.0" layoutY="470.0" mnemonicParsing="false" onAction="#handleButtonSettingsAction" prefHeight="25.0" prefWidth="100.0" text="SETTINGS" />
-    <Button layoutX="14.0" layoutY="510.0" mnemonicParsing="false" onAction="#handleButtonLogOutAction" prefHeight="25.0" prefWidth="100.0" text="LOG OUT" />
+    <Button layoutX="14.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleButtonEmployeesAction" prefHeight="25.0" prefWidth="100.0" text="EMPLOYEES" />
+    <Button layoutX="14.0" layoutY="449.0" mnemonicParsing="false" onAction="#handleButtonSettingsAction" prefHeight="25.0" prefWidth="100.0" text="SETTINGS" />
+    <Button layoutX="15.0" layoutY="498.0" mnemonicParsing="false" onAction="#handleButtonLogOutAction" prefHeight="25.0" prefWidth="100.0" text="LOG OUT" />
     <Label layoutX="47.0" layoutY="125.0" text="MENU" />
-    <Button layoutX="19.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleButtonSqlConnectionAction" text="Connect SQL" />
-    <Label id="accessdenied" fx:id="accessDenied" layoutX="338.0" layoutY="487.0" text="" />
+    <Label id="accessdenied" fx:id="accessDenied" layoutX="338.0" layoutY="487.0" text="" textFill="#ff3d00">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+    </Label>
   </children>
+  <effect>
+    <InnerShadow />
+  </effect>
 </AnchorPane>

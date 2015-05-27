@@ -4,6 +4,7 @@
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -35,5 +36,9 @@
     <Button layoutX="304.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleButtonAddStudentAction" text="AddStudent" />
     <Button layoutX="304.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleButtonDelStudentAction" text="Remove Student" />
     <TextField fx:id="removeStudent" layoutX="467.0" layoutY="198.0" prefWidth="50.0" promptText="ID" />
+    <Button layoutX="304.0" layoutY="131.0" mnemonicParsing="false" onAction="#handleButtonEmailAction" text="Email" />
   </children>
+  <effect>
+    <InnerShadow />
+  </effect>
 </AnchorPane>

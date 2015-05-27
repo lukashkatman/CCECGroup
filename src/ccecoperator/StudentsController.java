@@ -74,6 +74,8 @@ public class StudentsController extends ControllerClass {
     
     
     
+    
+    
     @FXML
     private void handleButtonDelStudentAction (ActionEvent event) {
         try {
@@ -152,10 +154,51 @@ public class StudentsController extends ControllerClass {
             System.out.println("Gatting you back to previous page!");
         } catch (Exception ex) {
         }
+    }
+        
+        @FXML
+        private void handleButtonemailBackAction(ActionEvent event) {
+        try {
+            // An alternative to getting the Stage from a Node declared in the scene is
+            // to ask the button pressed what scene it belongs to.
+            Node node = (Node) event.getSource();       
+            Stage stage = (Stage) node.getScene().getWindow(); 
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Scene2mainpage.fxml"));  
+            Parent root = loader.load();
+
+            Scene scene = new Scene(root);      
+            stage.setScene(scene);              
+            stage.show();                       
+
+            System.out.println("Gatting you back to previous page!");
+        } catch (Exception ex) {
+            
+        }
     
-    
-    
-    
+    }
+        
+        @FXML 
+    private void handleButtonEmailAction(ActionEvent event) {
+
+        try {
+            
+            Node node = (Node) event.getSource();
+            Stage stage = (Stage) node.getScene().getWindow();
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Email.fxml"));
+            Parent root = loader.load();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+            System.out.println("You clicked to send a mail!");
+        } catch (Exception ex) {
+        
+
+        System.out.println("ERROR!");
+        }
     }
     
      /*@FXML
@@ -221,6 +264,8 @@ public class StudentsController extends ControllerClass {
         } catch (Exception ex) {
         }
     }
+    
+   
     
     private void fillTable() {
         idStudent.setCellValueFactory(CellData -> CellData.getValue().getIdStudent().asObject());

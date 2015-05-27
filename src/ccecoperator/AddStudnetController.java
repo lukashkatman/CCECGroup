@@ -79,6 +79,63 @@ public class AddStudnetController extends ControllerClass {
     @FXML
     private Label EmployeeID;
     
+     @FXML
+    private Label helpinfo;
+    
+    @FXML
+    private Label IDCountryinfo;
+    
+    @FXML
+    private Label sv;
+     
+    @FXML
+    private Label dk;
+      
+    @FXML
+    private Label no;  
+    
+    @FXML
+    private Label fi;
+    
+    @FXML
+    private Label empid;
+    
+    @FXML
+    private Label peter;
+    
+    @FXML
+    private Label jessica;
+    
+    @FXML
+    private Label micheal;
+    
+    @FXML
+    private Label unid;
+    
+    @FXML
+    private Label hkr;
+    
+    @FXML
+    private Label mu;
+    
+    @FXML
+    private Label cum;
+    
+    @FXML
+    private Label cud;
+    
+    @FXML
+    private Label nu;
+    
+    @FXML
+    private Label ou;
+    
+    @FXML
+    private Label hp;
+    
+    
+    
+    
     
     StudentQueries studentQueries = new StudentQueries();
         
@@ -125,10 +182,58 @@ public class AddStudnetController extends ControllerClass {
 
             System.out.println("Gatting you back to previous page!");
         } catch (Exception ex) {
-        }
-    
-    
+        }   
     
     
     }
+    
+     @FXML 
+    private void handleButtonHelpAction(ActionEvent event) {
+
+        try {
+            
+            Node node = (Node) event.getSource();
+            Stage stage = (Stage) node.getScene().getWindow();
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Help.fxml"));
+            Parent root = loader.load();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+            System.out.println("You clicked Help!");
+        } catch (Exception ex) {
+        
+
+        System.out.println("ERROR!");
+        }
+    }
+    
+    @FXML 
+    private void handleButtonGobackAction(ActionEvent event) {
+
+        try {
+            
+            Node node = (Node) event.getSource();
+            Stage stage = (Stage) node.getScene().getWindow();
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("AddStudent.fxml"));
+            Parent root = loader.load();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+            System.out.println("You clicked Back!");
+        } catch (Exception ex) {
+        
+
+        System.out.println("ERROR!");
+        }
+    }
+    
+    
+   
+       
 }

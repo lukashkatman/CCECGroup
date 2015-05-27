@@ -35,7 +35,7 @@ public class Scene2mainpageController extends ControllerClass {
     @FXML
     private Label accessDenied;
     
-    @FXML
+    /*@FXML
     public void handleButtonSqlConnectionAction(ActionEvent event) {
          try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -49,7 +49,7 @@ public class Scene2mainpageController extends ControllerClass {
                     int nbr = rs.getInt("visaCharge");
                     String name = rs.getString("countryName");
                     System.out.println("Country Name: " + name + " \n and our service charge in SEK  " + nbr + "\n\n");
-                } */
+                } 
                
                 
             }
@@ -58,7 +58,7 @@ public class Scene2mainpageController extends ControllerClass {
         }
    
     
-    }
+    }*/
 
      @FXML 
     private void handleButtonStudentsAction(ActionEvent event) {
